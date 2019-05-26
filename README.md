@@ -1,6 +1,7 @@
 # phabricator-zh_CN
 参考了简体和繁体两个版本，目前有简繁混合的问题，但是一方面是最新版本的翻译库，另外一方面汉化的更彻底，因为推荐用这个版本。
-如果Fork之后要自己修改，请修改PhabricatorCNChineseTranslation中的$new_trans部分即可。
+
+如果要自己修改，请修改PhabricatorCNChineseTranslation中的$new_simple部分即可。
 
 About
 =====
