@@ -51751,6 +51751,7 @@ final class PhabricatorCNChineseTranslation
 
     $new_simple = array (
       'No tasks found.' => '没有找到任务。',
+      'None of your commits have active concerns.' => '您沒有被提出顾虑的提交。',
     );
     return array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
   }
