@@ -51755,6 +51755,7 @@ final class PhabricatorCNChineseTranslation
       'Save as Draft' => "存为草稿",
       'Save and Publish' => "保存并发布",
       'Needs Triage' => '需要分级',      
+      '%s created this object with visibility "%s".' => '%s 创建对象时使用的可见性为 "%s".',
     );
     return array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
   }
