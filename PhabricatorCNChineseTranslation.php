@@ -51754,6 +51754,7 @@ final class PhabricatorCNChineseTranslation
       'None of your commits have active concerns.' => '您沒有被提出顾虑的提交。',
       'Save as Draft' => "存为草稿",
       'Save and Publish' => "保存并发布",
+      'Needs Triage' => '需要分级',      
     );
     return array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
   }
