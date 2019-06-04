@@ -51759,7 +51759,7 @@ final class PhabricatorCNChineseTranslation
     );
 
     function traditional_to_simple(&$item, $key) {
-      $item = str_replace("物件", "对象", $item);
+      $item = str_replace("專案", "项目", str_replace("物件", "对象", $item));
     }
 
     $final_array = array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
