@@ -51763,7 +51763,7 @@ final class PhabricatorCNChineseTranslation
     }
 
     $final_array = array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
-    array_walk(&$final_array, 'traditional_to_simple');
+    array_walk($final_array, 'traditional_to_simple');
 
     return $final_array;
   }
