@@ -51757,6 +51757,14 @@ final class PhabricatorCNChineseTranslation
       'Needs Triage' => '需要分级',      
       '%s created this object with visibility "%s".' => '%s 创建对象时使用的可见性为 "%s".',
     );
-    return array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
+
+    function traditional_to_simple(&$item, $key) {
+      $item = str_replace("物件", "对象", $item);
+    }
+
+    $final_array = array_merge(array_filter($new_traditional), array_filter($old_simple), $new_simple);
+    array_walk(&$final_array, 'traditional_to_simple');
+
+    return $final_array;
   }
 }
