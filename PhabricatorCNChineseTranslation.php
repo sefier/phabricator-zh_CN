@@ -1,6 +1,8 @@
 <?php
     function traditional_to_simple(&$item, $key) {
-      $item = str_replace("專案", "项目", str_replace("物件", "对象", $item));
+      $healthy = array("專案", "物件", "週");
+      $yummy   = array("项目", "对象", "周");
+      $item = str_replace($healthy, $yummy, str_replace("物件", "对象", $item));
     }
 
 
